@@ -1,0 +1,11 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:darcu/dotfiles.git",
+    "type": "git"
+  },
+  "author": "Lucian Parfeni",
+  "license": "MIT"
+}
