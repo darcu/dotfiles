@@ -1,0 +1,43 @@
+[user]
+	name = Lucian Parfeni
+	email = darcu.ro@gmail.com
+[push]
+	default = simple
+[alias]
+	st = status
+	branches = branch -a
+	last = log --name-status HEAD^..HEAD
+	ok = rebase --continue
+	whatever = rebase --skip
+	mt = mergetool
+  dt = difftool
+	dts = difftool --staged
+	ca = commit --amend
+  c = commit
+	p = pull
+	f = fetch origin
+	r = rebase
+	rp = rebase --preserve-merges
+	m = merge --no-ff --edit --log
+  mff = merge --edit --log
+	ri = rebase -i
+	ck = checkout
+	d = branch -D
+	k = log --graph --decorate --pretty=oneline --abbrev-commit
+[core]
+	editor = code -n -w
+	excludesfile = ~/.gitignore
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = true
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
+[merge]
+	tool = meld
+[mergetool]
+	prompt = false
+[gc]
+	autoDetach = false
