@@ -1,43 +1,44 @@
 [user]
-	name = Lucian Parfeni
-	email = darcu.ro@gmail.com
+  name = Lucian Parfeni
+  email = darcu.ro@gmail.com
 [push]
-	default = simple
+  default = simple
 [alias]
-	st = status
-	branches = branch -a
-	last = log --name-status HEAD^..HEAD
-	ok = rebase --continue
-	whatever = rebase --skip
-	mt = mergetool
+  st = status
+  branches = branch -a
+  last = log --name-status HEAD^..HEAD
+  ok = rebase --continue
+  whatever = rebase --skip
+  mt = mergetool
   dt = difftool
-	dts = difftool --staged
-	ca = commit --amend
+  dts = difftool --staged
+  ca = commit --amend
   c = commit
-	p = pull
-	f = fetch origin
-	r = rebase
-	rp = rebase --preserve-merges
-	m = merge --no-ff --edit --log
+  p = pull
+  f = fetch origin
+  r = rebase
+  rp = rebase --preserve-merges
+  m = merge --no-ff --edit --log
   mff = merge --edit --log
-	ri = rebase -i
-	ck = checkout
-	d = branch -D
-	k = log --graph --decorate --pretty=oneline --abbrev-commit
+  ri = rebase -i
+  ck = checkout
+  ckb = checkout -b
+  d = branch -D
+  k = log --graph --decorate --pretty=oneline --abbrev-commit
 [core]
-	editor = code -n -w
-	excludesfile = ~/.gitignore
+  editor = nano
+  excludesfile = ~/.gitignore
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [pull]
-	rebase = true
+  rebase = true
 [diff]
-	tool = meld
+  tool = meld
 [difftool]
-	prompt = false
+  prompt = false
 [merge]
-	tool = meld
+  tool = meld
 [mergetool]
-	prompt = false
+  prompt = false
 [gc]
-	autoDetach = false
+  autoDetach = false
